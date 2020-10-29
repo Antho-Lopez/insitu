@@ -1,0 +1,124 @@
+/** Page Insitu **/
+
+.insitu{
+    background-color: #eaeadd;
+    height: 100vh;
+}
+
+.insitu_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eaeadd;
+}
+
+.bulle1{
+    position: relative;
+    width: 27%;
+    margin-top: 100px;
+    padding-left: 6vw;
+}
+
+.bulle1_fond{
+    position: absolute;
+    width: 280px;
+}
+
+.bulle1_text{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    transform: rotate(345deg);
+}
+
+.bulle1_text h3, .bulle2_text h3{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+.bulle1_text img, .bulle2_text img{
+    margin-top: 15px;
+    width: 40px;
+}
+
+.bulle1_text p, .bulle2_text p{
+    color: white;
+}
+
+.bulle2{
+    position: relative;
+    width: 27%;
+    margin-top: 100px;
+    padding-left: 1vw;
+}
+
+.bulle2_fond{
+    position: absolute;
+    width: 280px;
+}
+
+.bulle2_text{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 45px;
+    transform: rotate(15deg);
+}
+
+
+.insitu_text{
+    width: 46%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insitu_text h1{
+    margin-left: 0%;
+    margin-bottom: 60px;
+    font-size: 70px
+}
+
+.insitu_text p{
+    margin-bottom: 20px;
+    line-height: 36px;
+    font-size: 26px;
+}
+
+.insitu_text h2{
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .insitu_text h1{
+        font-size:40px;
+    }
+    
+    .insitu_text p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .insitu_text h2{
+        font-size: 26px;
+    }
+
+}
+
+
+.insitu_smaller_text{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+
+

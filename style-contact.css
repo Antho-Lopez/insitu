@@ -1,0 +1,139 @@
+/*** page contact ***/
+
+.contact{
+    background-color: #eaeadd;
+    
+}
+
+.contact_content{
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 45px;
+    margin-left: 15%;
+}
+
+.contact_left img{
+    width: 75%;
+}
+
+.infos_membres{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_membre{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.info_membre p{
+    margin-bottom: 8px;
+}
+
+.info_membre a{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 7px black;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    width: 50px;
+}
+
+.localisation{
+    display: flex;
+    flex-direction: row;
+}
+
+.gras_souligne{
+    font-family: 'coconot-bolder';
+    border-bottom: solid 7px black;
+    padding-bottom: 3px;
+}
+
+.localisation img{
+    width: 42%;
+}
+
+.text_localisation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_localisation p{
+    margin-bottom: 10px;
+}
+
+.infos_localisation{
+    margin-top: 150px;
+}
+
+.infos_localisation h3{
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.infos_localisation p{
+    font-size: 28px;
+}
+
+.text_localisation p, .text_localisation a{
+    font-size: 18px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/*** Formulaire de contact ***/
+
+.contact_right{
+    width: 100%;
+}
+
+.contact_right p{
+    font-size: 22px;
+    margin-top: 220px;
+}
+
+.form_contact{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    margin-top: 20px;
+}
+
+.form_contact input, .form_contact select{
+    border: 6px solid black;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.button_contact button{
+    color: rgb(202, 202, 202);
+    background-color: black;
+    border: 0px;
+    width: 100%;
+    text-align: left;
+    padding: 15px 0px 15px 10px;
+
+}
+
+.checkbox_contact{
+    font-size: 13px;
+}
+
+.checkbox_contact input[type=checkbox]{
+    margin-top: 20px;
+    margin-left: 5px;
+
+}

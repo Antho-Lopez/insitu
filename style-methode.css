@@ -1,0 +1,205 @@
+/** notre méthode **/
+
+.content_methode{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    
+}
+
+.conteneur{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 200%;
+    
+}
+
+.conteneur-rose{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 200%;
+    border: 1px solid #e2007a;
+    
+}
+
+.conteneur-red{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 200%;
+    border: 1px solid #e2001a;
+    
+}
+
+
+.fond{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-left: 47px;
+    margin-top: 50px;
+    border-radius: 200%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fond p{
+    font-size: 24px;
+    color: white;
+}
+
+.fond h4{
+    font-size: 42px;
+    font-family: 'coconot-bolder';
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.fond-marron{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-left: 47px;
+    margin-top: 50px;
+    border-radius: 200%;
+    background-color: #eaeadd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fond-marron p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fond-marron h3{
+    font-family: 'coconot-bolder';
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 32px;
+    color: #e2007a;
+}
+
+.fond-marron h2{
+    font-family: 'coconot-bolder';
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 32px;
+    color: #e2001a;
+}
+
+
+.fond-marron h4{
+    font-size: 24px;
+}
+
+.point1 a{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 28px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid white;
+
+}
+
+.point2 a{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 67px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid white;
+}
+
+.point3 a{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 453px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid white;
+}
+
+.point4 a{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 416px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid white;
+}
+
+.point5 a{
+    position: absolute;
+    margin-top: -7px;
+    margin-left: 234px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid white;
+}
+
+.hover-white a{
+    background-color: white;
+    border: 1px solid #e2007a;
+}
+
+.hover-white-red a{
+    background-color: white;
+    border: 1px solid #e2001a;
+}
+
+.hover-pink a{
+    background-color: #e2007a;
+    border: 0px;
+}
+.hover-red a{
+    background-color: #e2001a;
+    border: 0px;
+}
+
+
+.methode2{
+    background-image: url(images/immersion.jpg);
+    background-position-x: center;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.methode3{
+    background-image: url(images/cap_a_atteindre.jpg);
+    background-position-x: center;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.methode4{
+    background-image: url(images/tete_a_tete.jpg);
+    background-position-x: center;
+    background-position: center;
+    height: 100vh;
+}
+
+.methode5{
+    background-image: url(images/team_dediee.jpg);
+    background-position-x: center;
+    background-position: center;
+    height: 100vh;
+}

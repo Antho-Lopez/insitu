@@ -1,0 +1,318 @@
+/* Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root{
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;    
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+.home,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'coconot';
+    src: url('font/CoconOT/CoconOT-Light.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'coconot-bold';
+    src: url('font/CoconOT/CoconOT-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'coconot-bolder';
+    src: url('font/CoconOT/CoconOT-Bold.otf') format("opentype");
+}
+
+body{
+    font-family: 'coconot';
+}
+
+.gras{
+    font-family: 'coconot-bold';
+}
+
+.tres_gras{
+    font-family: 'coconot-bolder';
+}
+
+.home{
+    background: linear-gradient(322deg, #e2007a, #e2001a);
+    background-size: 400% 400%;
+    height: 100vh;
+    
+    
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.menu-wrap{
+    z-index: 2;
+}
+
+.menu-wrap .toggler{
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    right: 0;
+    top: 25px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .burger{
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    right: 0;
+    top: 27px;
+    height: 60px;
+    padding: 1rem;
+}
+
+/*hamburger ligne du milieu*/
+
+.menu-wrap .burger > div {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.newsletter .menu-wrap .burger > div,
+.contact .menu-wrap .burger > div,
+.insitu .menu-wrap .burger > div {
+
+    background-color: rgb(0, 0, 0);  
+}
+
+/*hamburger ligne du haut et du bas*/
+
+.menu-wrap .burger > div:before,
+.menu-wrap .burger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    width: 100%;
+    height: 6px;
+    background: inherit;
+}
+
+.menu-wrap .burger > div:after{
+    top: 10px;
+}
+
+/*animation du toggler */
+
+.menu-wrap .toggler:checked + .burger > div {
+    transform: rotate(135deg);
+}
+
+/* met les lignes du menu en X */
+.menu-wrap .toggler:checked + .burger > div:before,
+.menu-wrap .toggler:checked + .burger > div:after {
+    top:0;
+    transform: rotate(90deg);
+}
+
+/*rotation en hover*/
+
+.menu-wrap .toggler:checked:hover + .burger > div {
+    transform: rotate(225deg);
+}
+
+/* show menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden; 
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.menu-wrap .menu > div {
+    background: var(--overlay-color);
+    margin-top: 20px;
+    height: 270px;
+    display: flex;
+    flex: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transform: scale(0);
+}
+
+.menu-wrap .menu > div > div{
+    max-width: 90vw;
+    max-height: 100vw;
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul {
+    margin-top: 25px;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    color: white;
+    font-size: 1.5rem;
+    padding: 13px;
+    text-align: right;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.navbar img{
+    width: 8vw;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.logo-navbar{
+    display: flex;
+    margin-right: 45px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logo-navbar a{
+    padding-top: 5px;
+}
+
+.logo-navbar img{
+    margin-right: 15px;
+    margin-left: 0px;
+    margin-top: 25px;
+    width: 35px;
+}
+
+.content-home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.text-principale{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.text-principale h1{
+    margin-left: 0%;
+    font-size: 100px;
+    color: white;
+}
+
+.text-principale hr{
+    width: 150px;
+    border: 4px solid white;
+    margin-left: 0px;
+}
+
+.text-footer p{
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.text-footer img{
+    width: 70px;
+}
+
+.text-footer{
+    width: 100vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .text-principale h1{
+        font-size: 50px;
+    }
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 78 81.6" style="enable-background:new 0 0 78 81.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#F70302;}
+</style>
+<g id="cross" class="st0">
+	<g class="st1">
+		<line class="st2" x1="-131.1" y1="-127.4" x2="157.4" y2="161.1"/>
+		<line class="st2" x1="157.4" y1="-127.4" x2="-131.1" y2="161.1"/>
+	</g>
+</g>
+<g id="cross_copy">
+	<path class="st3" d="M41.9,40.4L77.4,4.9c0.8-0.8,0.8-2.1,0-2.9c-0.8-0.8-2.1-0.8-2.9,0L39,37.5L3.5,2C2.7,1.2,1.4,1.2,0.6,2
+		c-0.8,0.8-0.8,2.1,0,2.9l35.5,35.5L0.6,75.9c-0.8,0.8-0.8,2.1,0,2.9C1,79.2,1.5,79.4,2,79.4s1-0.2,1.4-0.6L39,43.3l35.5,35.5
+		c0.4,0.4,0.9,0.6,1.4,0.6c0.5,0,1-0.2,1.4-0.6c0.8-0.8,0.8-2.1,0-2.9L41.9,40.4z"/>
+</g>
+</svg>
