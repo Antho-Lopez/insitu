@@ -3,31 +3,62 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>In Situ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-insitu_popup.css">
+    <link rel="stylesheet" href="style-insitu_popup-scss.css">
   </head>
   <body>
     <section class="popup">
-      <div class="content_popup">
-        <div class="part1_popup">
-          <a href="index.html"><img src="images/logo-agence-insitu-color1.svg" alt="logo noir"></a>
-          <a href="insitu.html"><span id="smaller"><img src="images/croix1.svg" alt="croix"></span></a>
+      <nav class="navbar">
+        <div class="logo_hover">
+          <a href="index.html"><img class="logo" src="images/logo-agence-insitu-black.svg" alt="logo black"></a>
         </div>
-
+        <div class="menu-navbar">
+          <div class="logo-navbar">
+            <div class="arrow_return">
+              <a href="insitu.html"><img src="images/arrow_return_black.svg" alt="fleche retour"></a>
+            </div>
+            <div class="linkedin_red">
+              <a href="https://fr.linkedin.com/" target="_blank"><img src="images/ico_linkedin_black.svg" alt="linkedin"></a>
+            </div>
+            <div class="icone_telephone_red">
+              <a href="contact.html"><img src="images/ico_tel_black.svg" alt="telephone"></a>
+            </div>
+          </div>
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="burger">
+              <div>
+              </div>
+            </div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="insitu.html">InSitu</a></li>
+                    <li><a href="methode1.html">Notre méthode</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
         <div class="part2_popup">
           <div class="bulle_blc_1">
             <div class="bulle_blc_1_fond">
               <img src="images/bulle_white1.svg" alt="fond rond blanc1">
             </div>
             <div class="bulle_blc_1_text">
-              <h3>Directeur de réseau <br>ou de groupement</h3>
-              <p>Vous connaissez votre réseau et votre métier<br> sur le bout des doigts. C’est une évidence.</p>
-              <p>L’expertise de l’agence <span class="tres_gras">in situ </span>vous aide à<br>
+              <h3 class="tres_gras">Directeur de réseau</h3>
+              <p class="open-sans-light">Vous connaissez votre réseau et votre métier<br> sur le bout des doigts. C’est une évidence.</p>
+              <p class="open-sans-light">L’expertise de l’agence <span class="tres_gras">in situ </span>vous aide à<br>
                 avoir un œil neuf, à animer différemment<br>
-                votre réseau et <span class="gras">vous fait performer<br>
+                votre réseau et <span class="open-sans">vous fait performer<br>
                 davantage.</span></p>
-              <a href="contact.html">ON S'APPELLE ?</a>
+              <a href="contact.html" class="regular">ON S'APPELLE ?</a>
             </div>
           </div>
           <div class="bulle_blc_2">
@@ -35,15 +66,15 @@
               <img src="images/bulle_white2.svg" alt="fond rond blanc2">
             </div>
             <div class="bulle_blc_2_text">
-              <h3>Avec <span class="tres_gras">in situ </span><br>concrètement vous :</h3>
+              <h3 class="tres_gras">Avec in situ :</h3>
               <ul>
-                <li><span class="tres_gras">boostez le trafic et la notoriété</span> locale des
+                <li class="open-sans-light"><span class="open-sans">boostez le trafic et la notoriété</span> locale des
                   points de vente de votre réseau, grâce à un
                   accompagnement de com’ opérationnelle
-                  <span class="tres_gras">ultra personnalisé,</span></li>
-                <li>bénéficiez d’un <span class="tres_gras">feed-back en temps réel</span> de
+                  <span class="open-sans">ultra personnalisé,</span></li>
+                <li class="open-sans-light">bénéficiez d’un <span class="open-sans">feed-back en temps réel</span> de
                   votre réseau,</li>
-                <li><span class="tres_gras">coachez </span>les points de vente qui en ont
+                <li class="open-sans-light"><span class="open-sans">coachez </span>les points de vente qui en ont
                   le plus besoin</li>
               </ul>
             </div>

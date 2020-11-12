@@ -3,15 +3,8 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 317.2 383.7" style="enable-background:new 0 0 317.2 383.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#E2031A;}
-	.st1{fill:none;stroke:#E2031A;stroke-miterlimit:10;}
+	.st0{fill:#E2001A;}
 </style>
-<ellipse transform="matrix(3.918738e-02 -0.9992 0.9992 3.918738e-02 -13.8803 318.2641)" class="st0" cx="158.6" cy="166.3" rx="165" ry="157.3"/>
-<g>
-	<line class="st1" x1="79.5" y1="308.8" x2="214.5" y2="382.3"/>
-	<line class="st1" x1="293.1" y1="250.4" x2="214.1" y2="382.5"/>
-	<line class="st1" x1="79.5" y1="308.8" x2="293.1" y2="250.4"/>
-</g>
-<rect x="156.9" y="281.4" transform="matrix(0.5132 -0.8583 0.8583 0.5132 -153.7632 344.8429)" class="st0" width="140.4" height="53.2"/>
-<rect x="133.3" y="251.6" transform="matrix(0.4782 -0.8782 0.8782 0.4782 -199.1829 308.3823)" class="st0" width="53.2" height="140.4"/>
+<path id="Tracé_61" class="st0" d="M167.3,3.8c39.5,1.6,72,18.3,97.5,47.7c26.7,30.7,37.5,63.9,36,103.4
+	c-6,86.1-112.5,149.5-84.2,225.9c-62-40.4-207.4-143-200-248.2c2.7-38.2,19.4-70.7,48.8-96.3S127.9-0.2,167.3,3.8z"/>
 </svg>

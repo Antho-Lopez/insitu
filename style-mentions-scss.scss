@@ -1,0 +1,50 @@
+$color_background: #eaeadd;
+
+@import 'header';
+
+.mentions{
+    background-color: $color_background;
+}
+
+.content-mentions{
+    width: 74%;
+    margin-left: 13%;
+}
+
+.content-mentions h2, .content-mentions h4{
+    text-align: center;
+}
+
+.content-mentions h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.content-mentions h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.content-mentions p, .content-mentions h4{
+    line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-mentions h2{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .content-mentions{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

@@ -1,0 +1,299 @@
+/** Page Insitu **/
+
+$color_background: #eaeadd;
+$white_color: white;
+
+@import 'header';
+
+
+body{
+    border: 15px solid $white_color;
+}
+
+.menu-wrap .burger{
+    right: 20px;
+    top: 42px;
+}
+
+.menu-wrap .toggler{
+    right: 20px;
+    top: 42px;
+}
+
+.menu-wrap .menu {
+    top: 70px;
+}
+
+
+.insitu{
+    background-color: $color_background;
+    height: 95vh;
+}
+
+.insitu_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color_background;
+    margin-top: -50px;
+}
+
+
+.bulle1_text h3, .bulle2_text h3{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 26px;
+    color: $white_color;
+}
+
+.bulle1_text img, .bulle2_text img{
+    margin-top: 15px;
+    width: 40px;
+}
+
+.bulle1_text p, .bulle2_text p{
+    color: $white_color;
+}
+
+
+.bulle1{
+    position: relative;
+    width: 27%;
+    margin-top: 100px;
+    padding-left: 6vw;
+}
+
+.bulle2{
+    @extend .bulle1;
+    padding-left: 1vw;
+}
+
+.bulle1_fond{
+    position: absolute;
+    width: 280px;
+    margin-left: -35px;
+}
+
+.bulle2_fond{
+    @extend .bulle1_fond;
+    margin-left: -15%;
+}
+
+.bulle1_text{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin-top: 70px;
+    transform: rotate(345deg);
+}
+
+.bulle2_text{
+    @extend .bulle1_text;
+    margin-top: 140px;
+    margin-left: -20px;
+    margin-right: 0px;
+    transform: rotate(15deg);
+}
+
+
+.insitu_text{
+    width: 46%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insitu_text h1{
+    margin-left: 0%;
+    margin-bottom: 60px;
+    font-size: 70px
+}
+
+.insitu_text p{
+    margin-bottom: 20px;
+    line-height: 36px;
+    font-size: 26px;
+}
+
+.insitu_text h2{
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -20px;
+
+    a{
+        display: inline-block;
+        background-image: url('images/icon_arrow_red.svg');
+        background-repeat: no-repeat;
+        width: 80px;
+    }
+
+    p{
+        padding-right: 10px;
+    }
+    a:hover img{
+        visibility: hidden;
+    }
+
+    img{
+        width: 80px; 
+    }
+}
+
+.insitu_smaller_text{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .insitu_text h1{
+        font-size:40px;
+    }
+    
+    .insitu_text p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .insitu_text h2{
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .insitu_text h1{
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+    
+    .insitu_text p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .insitu_text h2{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .insitu_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 1200px;
+    }
+
+    .insitu_text{
+        width: 80%;
+        margin-top: -380px;
+    }
+
+    .bulle1{
+        
+        margin-top: 450px;
+        
+    }
+    .bulle2{
+        
+        margin-top: 400px;
+        
+    }
+
+    .text-footer{
+        margin-top: -60px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .insitu_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 1200px;
+    }
+
+    .insitu_text{
+        width: 90%;
+        margin-top: -400px;
+    }
+
+    .bulle1_text{
+        margin-left: 50px;
+    }
+
+    .bulle2{
+        margin-top: 370px; 
+    }
+
+    .bulle2_text{
+        margin-left: 30px;
+    }
+
+    .insitu_text h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .insitu_smaller_text{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .insitu_text{
+        width: 96%;
+    }
+
+    .bulle1{
+        margin-left: -140px;
+    }
+
+    .bulle2{
+        margin-top: 370px; 
+        margin-bottom: 10px;
+        margin-left: -140px;
+    }
+
+    .insitu_text h1{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .insitu_smaller_text{
+        width: 96%;
+    }
+
+    .insitu_text p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .insitu_text h2{
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+

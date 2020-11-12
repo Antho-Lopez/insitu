@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>In Situ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="style-contact-scss.css">
   </head>
   <body>
     <section class="contact">
       <nav class="navbar">
-        <a href="index.html"><img class="logo" src="images/logo-agence-insitu-black.svg" alt="logo noir"></a>
+        <div class="logo_hover">
+          <a href="index.html"><img class="logo" src="images/logo-agence-insitu-black.svg" alt="logo black"></a>
+        </div>
         <div class="menu-navbar">
           <div class="logo-navbar">
-            <a href="https://fr.linkedin.com/"><img src="images/ico_linkedin_black.svg" alt="linkedin"></a>
-            <img src="images/ico_tel_black.svg" alt="telephone">
+            <div class="linkedin_red">
+              <a href="https://fr.linkedin.com/" target="_blank"><img src="images/ico_linkedin_black.svg" alt="linkedin"></a>
+            </div>
+            <div class="icone_telephone_red">
+              <a href="contact.html"><img src="images/ico_tel_black.svg" alt="telephone"></a>
+            </div>
           </div>
           <div class="menu-wrap">
             <input type="checkbox" class="toggler">
@@ -37,63 +43,69 @@
           </div>
         </div>
       </nav>
-      <h1>Vous êtes arrivé jusqu'ici, <br>allons <span class="tres_gras">plus loin ensemble !</span></h1>
+      <h1>Vous êtes arrivé jusqu'ici, <br>allons <span class="tres_gras underline">PLUS LOI</span><span class="tres_gras">N ENSEMBLE !</span></h1>
       <section class="contact_content">
         <div class="contact_left">
           <img src="images/membres.jpg" alt="membres">
           <div class="infos_membres">
             <div class="info_membre">
-              <p><span class="tres_gras">Carole bodin</span></p>
-              <p>carole@agence-in-situ.com</p>
-              <a href="https://fr.linkedin.com/">Linkedin</a>
+              <p><span class="tres_gras underline">Adeli</span><span class="tres_gras">ne Lucas</span></p>
+              <div class="icones-ligne">
+                <a href="mailto:adeline@agence-in-situ.com"><img src="images/ico_mail.svg" alt="mail"></a>
+                <a href="https://fr.linkedin.com/" target="_blank"><img src="images/ico_linkedin_black.svg" alt="linkedin"></a>
+              </div>
             </div>
             <div class="info_membre">
-              <p><span class="tres_gras">Adeline Lucas</span></p>
-              <p>adeline@agence-in-situ.com</p>
-              <a href="https://fr.linkedin.com/">Linkedin</a>
+              <p><span class="tres_gras underline">Carol</span><span class="tres_gras">e bodin</span></p>
+              <div class="icones-ligne">
+                <a href="mailto:carole@agence-in-situ.com"><img src="images/ico_mail.svg" alt="mail"></a>
+                <a href="https://fr.linkedin.com/" target="_blank"><img src="images/ico_linkedin_black.svg" alt="linkedin"></a>
+              </div>
             </div>
           </div>
           <div class="infos_localisation">
-            <p>Si vous voulez venir prendre un<br> café ou un thé ...</p>
+            <p><span class="open-sans-bold">Pour vous abonner à la newsletter de l’agence IN SITU :</span><br> la PAUSE COM’ des réseaux c’est ICI !</p>
             <h3>On est <span class="gras_souligne">ICI</span></h3>
             <div class="localisation">
               <img src="images/grue.jpg" alt="grue">
               <div class="text_localisation">
+                <h4>Si vous voulez venir prendre un café ou un thé … venez nous voir IN SITU !</h4>
+                <p>agence de communication IN SITU</p>
                 <p>6, rue St-Domingue</p>
                 <p>« Le Karting »</p>
-                <p>44200 Nantes</p>
-                <p>+33 (0) 6 61 93 69 41</p>
-                <p>carole@agence-in-situ.com</p>
-                <a href="https://fr.linkedin.com/">Linkedin</a>
+                <p><span class="underline">4420</span>0 Nantes</p>
               </div>
             </div>
           </div>
         </div>
         <div class="contact_right">
-          <p>Envie de prendre un <span class="tres_gras">NOUVEAU DÉPART ?</span><br> ou tout simplement de <span class="tres_gras">NOUS RENCONTRER :)</span></p>
+          <p>Envie de prendre un <span class="open-sans-bold">NOUVEAU DÉPART ?</span><br> ou tout simplement de <span class="open-sans-bold">NOUS RENCONTRER</span></p>
           <form>
             <div class="form_contact">
-              <input type="text" placeholder="Prénom + Nom" name="nom">
-              <input type="text" placeholder="Nom de votre réseau / groupement / franchise" name="franchise">
-              <input type="tel" placeholder="Téléphone" name="telephone">
-              <input type="email" placeholder="Adresse email" name="user_email">
+              <input type="text" placeholder="Prénom + Nom*" name="nom">
+              <input type="text" placeholder="Nom de votre réseau / groupement / franchise*" name="franchise">
+              <input type="tel" placeholder="Téléphone*" name="telephone">
+              <input type="email" placeholder="Adresse email*" name="user_email">
 
               <select name="pets" id="pet-select">
-                  <option value="">Vous avez besoin de</option>
+                  <option value="">Vous avez besoin de...</option>
                   <option value="renseignement">Renseignements</option>
                   <option value="aide">D'aide</option>
                   <option value="Autre">Autre</option>
               </select>
+              <label class="checkbox_contact">
+                <input type="checkbox" required value="rgpd" name="rgpd"> j'ai bien pris connaissance de <a href="mentions_legale.html">la politique de<br> protection des données personnelles.</a>
+              </label>
               <div class="button_contact">
-                <button type="submit">C’est parti !!</button>
+                <button type="submit">ENVOYER</button>
               </div>
             </div>
-            <label class="checkbox_contact">
-              <input type="checkbox" required value="rgpd" name="rgpd"> j'ai bien pris connaissance de la politique de<br> protection des données personnelles.
-            </label>
           </form>
         </div>
       </section>
+      <div class="text-footer">
+        <a href="mentions_legale.html"><span class="underline">Menti</span>ons légales</a>
+      </div>
     </section>
-</body>
+  </body>
 </html>

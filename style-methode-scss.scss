@@ -1,0 +1,216 @@
+/** notre méthode **/
+
+$color_background: #eaeadd;
+$white_color: white;
+$red_color: #e2001a;
+$pink_color: #e2007a;
+
+@import 'header';
+@import 'style-home-scss';
+
+.content_methode{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    
+}
+
+.conteneur{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 200%;
+    border: 1px solid $color_background;
+    
+}
+
+.conteneur-rose{
+    @extend .conteneur;
+    
+}
+
+.conteneur-red{
+    @extend .conteneur;
+    
+}
+
+
+.fond{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-left: 47px;
+    margin-top: 50px;
+    border-radius: 200%;
+    border: 1px solid $white_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.fond-marron{
+    @extend .fond;
+    background-color: $color_background;
+    border: none;
+}
+
+.fond p{
+    font-size: 24px;
+    color: $white_color;
+}
+
+.fond-marron p{
+    font-size: 14px;
+    color: initial;
+}
+
+.larger-text p{
+    font-size: 24px;
+}
+
+.fond-marron h4{
+    font-size: 24px;
+    color: initial;
+}
+
+.larger-text h4{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fond-marron h3{
+    font-family: 'coconot-bolder';
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 32px;
+    color: $pink_color;
+}
+
+.fond-marron h2{
+    font-family: 'coconot-bolder';
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 32px;
+    color: $red_color;
+}
+
+
+.point1 a{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 28px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid $white_color;
+    background-color: $color_background;
+
+}
+
+.point2 a{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 67px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid $white_color;
+    background-color: $color_background;
+}
+
+.point3 a{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 453px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid $white_color;
+    background-color: $color_background;
+}
+
+.point4 a{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 416px;
+    width: 15px;
+    height: 15px;
+    border-radius: 200%;
+    border: 1px solid $white_color;
+    background-color: $color_background;
+}
+
+.hover-white a{
+    background-color: $color_background;
+    border: 1px solid $color_background;
+}
+
+.hover-white-red a{
+    background-color: $white_color;
+    border: 1px solid $color_background;
+}
+
+.hover-pink a{
+    background-color: $pink_color;
+    border: 0px;
+}
+
+.hover-red a{
+    background-color: $red_color;
+    border: 0px;
+}
+
+
+.methode2{
+    background-image: url(images/immersion.jpg);
+    background-position-x: center;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.methode3{
+    @extend .methode2;
+    background-image: url(images/cap_a_atteindre.jpg);
+    
+    
+}
+
+.methode4{
+    @extend .methode2;
+    background-image: url(images/tete_a_tete.jpg);
+}
+
+.methode5{
+    @extend .methode2;
+    background-image: url(images/team_dediee.jpg);
+}
+
+.text-footer1{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    a{
+        display: inline-block;
+        background-image: url('images/icon_arrow_long_red.svg');
+        background-repeat: no-repeat;
+        width: 400px;
+        margin-top: -20px;
+    }
+
+    a:hover img{
+        visibility: hidden;
+    }
+
+    img{
+        width: 400px; 
+        
+    }
+}

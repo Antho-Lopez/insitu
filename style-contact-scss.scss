@@ -1,0 +1,257 @@
+$color_background: #eaeadd;
+$black_color: black;
+
+@import 'header';
+
+.contact{
+    background-color: $color_background;
+}
+
+.contact_content{
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 45px;
+    margin-left: 15%;
+}
+
+h1 .underline, p .underline, a .underline{
+    border-bottom: solid 7px black;
+}
+
+.contact_left img{
+    width: 75%;
+}
+
+.infos_membres{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_membre{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.info_membre p{
+    margin-bottom: 8px;
+}
+
+
+.icones-ligne img{
+    width: 45px;
+    margin-top: 20px;
+}
+
+.localisation{
+    display: flex;
+    flex-direction: row;
+}
+
+.gras_souligne{
+    font-family: 'coconot-bolder';
+    border-bottom: solid 7px $black_color;
+    padding-bottom: 3px;
+}
+
+.localisation img{
+    width: 42%;
+}
+
+.text_localisation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_localisation p{
+    margin-bottom: 10px;
+}
+
+.infos_localisation{
+    margin-top: 50px;
+}
+
+.infos_localisation h3{
+    font-size: 40px;
+    margin-top: 215px;
+    margin-bottom: 25px;
+}
+
+.infos_localisation p{
+    font-size: 16px;
+}
+
+.text_localisation p, .text_localisation a{
+    font-size: 16px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: $black_color;
+}
+
+.text_localisation h4{
+    margin-left: 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/*** Formulaire de contact ***/
+
+.contact_right{
+    width: 100%;
+    margin-left: -80px;
+}
+
+.contact_right p{
+    font-size: 22px;
+    margin-top: 220px;
+}
+
+.form_contact{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.form_contact input, .form_contact select{
+    border: 6px solid $black_color;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.button_contact button{
+    color: rgb(202, 202, 202);
+    background-color: $black_color;
+    cursor: pointer;
+    border: 0px;
+    width: 100%;
+    text-align: left;
+    padding: 15px 0px 15px 10px;
+
+}
+
+.button_contact button:hover{
+    background-color: #e2001a;
+    color: black;
+}
+
+
+.checkbox_contact{
+   margin-bottom: 15px;
+}
+
+.checkbox_contact a{
+    color: initial;
+ }
+
+.checkbox_contact input[type=checkbox]{
+    margin-top: 20px;
+    margin-left: 5px;
+
+}
+
+.text-footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    a{
+    text-decoration: none;
+    color: black;
+
+    }
+
+    a:hover{
+        color: red;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .contact_content{
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: column;
+    }
+
+    .contact_left, .contact_right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_right{
+        margin-left: 0px;
+    }
+
+    .infos_localisation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos_localisation h3{
+        margin-top: 20px;
+    }
+
+    .contact_right p{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .form_contact{
+        width: initial;
+    }
+
+    .contact h1{
+        margin-left: 0%;
+        margin-top: 20px;
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .infos_localisation img{
+        display: none;
+    }
+
+    p, h4{
+        text-align: center;
+    }
+
+    .contact_right p{
+        font-size: 18px;
+    }
+
+    .text_localisation p, .text_localisation a{
+        margin-left: 0px;
+    }
+    .text_localisation h4{
+        margin-left: 0px;
+    }
+
+    .info_membre{
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    .contact h1{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,175 @@
+/*** Page Newsletter ***/
+
+$color_background: #eaeadd;
+$white_color: white;
+
+@import 'header';
+
+body{
+    background-color: $color_background;
+}
+
+.newsletter{
+    background-color: $color_background;
+    height: 100vh;
+}
+
+.newsletter-part1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: $color_background;
+    
+}
+
+h2 .underline,
+a .underline{
+    border-bottom: solid 7px black;
+}
+
+.newsletter-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    h2{
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
+
+.newsletter-right{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.news-cards{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(226,0,122);
+    background: linear-gradient(150deg, rgba(226,0,122,1) 20%, rgba(226,0,26,1) 80%);
+    padding: 30px 40px 30px 40px;
+    margin-right: 15px;
+    height: 280px;
+
+    p{
+        color: $white_color;
+    }
+
+    h3{
+        color: $white_color;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+}
+
+.news-cards p:hover, .news-cards h3:hover{
+    color: black;
+}
+
+.bigger{
+    font-size: 40px;
+}
+
+.news-cards img{
+    width: 40px;
+}
+
+.newsletter-left form{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.row-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.button button{
+    color: white;
+    background-color: black;
+    border: 0px;
+    margin-left: -75px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.row-form input[type=email]{
+    border: 6px solid black;
+    border-right: 80px solid black;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+
+.text-footer{
+    margin-top: 50px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    a{
+    text-decoration: none;
+    color: black;
+
+    }
+
+    a:hover{
+        color: red;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .newsletter-part1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-left{
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    .newsletter-right{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .newsletter-left h2{
+        font-size: 24px;
+    }
+
+    .newsletter-left p{
+        font-size: 14px;
+    }
+
+    .newsletter-right{
+        flex-direction: column;
+    }
+
+    .news-cards{
+        margin-bottom: 10px;
+    }
+
+    .text-footer{
+        margin-bottom: 20px;
+    
+    }
+}
+

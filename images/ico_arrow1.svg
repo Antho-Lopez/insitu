@@ -3,15 +3,18 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:10;}
-	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st0{display:none;fill:#00C6F4;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:10;}
+	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
+<rect x="-3.9" y="-4.4" class="st0" width="66" height="61.8"/>
 <g id="Groupe_20" transform="translate(1783.12 81.12)">
 	<g id="Ellipse_6" transform="translate(-0.12 -0.12)">
-		<circle class="st0" cx="-1758" cy="-56" r="15"/>
-		<circle class="st1" cx="-1758" cy="-56" r="20"/>
+		<circle class="st1" cx="-1758" cy="-56" r="15"/>
+		<circle class="st2" cx="-1758" cy="-56" r="20"/>
 	</g>
 </g>
-<path id="Polygone_1" class="st2" d="M34,25L20,36.1V13.9L34,25z"/>
+<rect x="24.1" y="13.9" class="st3" width="1.8" height="22.1"/>
+<rect x="24.1" y="13.9" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 50 7.629395e-06)" class="st3" width="1.8" height="22.1"/>
 </svg>

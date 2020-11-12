@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>In Situ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-methode.css">
+    <link rel="stylesheet" href="style-methode-scss.css">
   </head>
   <body>
     <section class="home">
       <nav class="navbar">
-        <a href="index.html"><img class="logo" src="images/logo-insitu-blanc.svg" alt="logo blanc"></a>
+        <div class="logo_hover">
+          <a href="index.html"><img class="logo" src="images/logo-agence-insitu-blanc.svg" alt="logo blanc"></a>
+        </div>
         <div class="menu-navbar">
           <div class="logo-navbar">
-            <a href="https://fr.linkedin.com/"><img src="images/ico_linkedin.svg" alt="linkedin"></a>
-            <img src="images/ico_tel.svg" alt="telephone">
+            <div class="linkedin">
+              <a href="https://fr.linkedin.com/" target="_blank"><img src="images/ico_linkedin.svg" alt="linkedin"></a>
+            </div>
+            <div class="icone_telephone">
+              <a href="contact.html"><img src="images/ico_tel.svg" alt="telephone"></a>
+            </div>
           </div>
           <div class="menu-wrap">
             <input type="checkbox" class="toggler">
@@ -39,18 +45,19 @@
       </nav>
       <div class="content_methode">
         <div class="conteneur">
-          <span class="point1"><a href="methode5.html"></a></span>
-          <span class="point2"><a href="methode4.html"></a></span>
-          <span class="point3"><a href="methode2.html"></a></span>
-          <span class="point4"><a href="methode3.html"></a></span>
-          <span class="point5 hover-white"><a href="methode1.html"></a></span>
-          <div class="fond">
-            <p>L’AGENCE DE <br>COMMUNICATION</p>
-            <h4>in situ</h4>
-            <p>AVEC VOUS ET VOTRE RÉSEAU<br> À CHAQUE INSTANT</p>
+          <span class="point1"><a href="methode5.html">TEAM DÉDIÉE</a></span>
+          <span class="point2"><a href="methode4.html">TÊTE-À-TÊTE</a></span>
+          <span class="point3"><a href="methode2.html">IMMERSION</a></span>
+          <span class="point4"><a href="methode3.html">CAP À ATTEINDRE</a></span>
+          <div class="fond-marron larger-text">
+            <p>L’agence de communication</p>
+            <h4 class="tres_gras">in situ</h4>
+            <p>Avec vous et votre réseau<br> à chaque instant</p>
           </div>
         </div>
       </div>
     </section>
 </body>
 </html>
+
+
