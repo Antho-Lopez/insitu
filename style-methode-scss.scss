@@ -214,3 +214,116 @@ $pink_color: #e2007a;
         
     }
 }
+
+.conteneur-responsive{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content_methode{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        
+    }
+
+    .fond-marron{
+        background-color: initial;
+    }
+
+    .conteneur, .conteneur-rose, .conteneur-red{
+        border: 0px;
+        width: initial;
+        height: 200px;
+        padding-top: 80px
+    }
+
+    .conteneur p, .conteneur-rose p, .conteneur-red p, .fond-marron h2{
+        color: white;
+    }
+
+    .point1, .point2, .point3, .point4{
+        display: none;
+    }
+    
+    .methode2, .method3, .methode4, .methode4{
+        background: linear-gradient(322deg, $pink_color, $red_color);
+        background-size: 400% 400%;
+        height: 100vh;
+
+        -webkit-animation: AnimationName 12s ease infinite;
+        -moz-animation: AnimationName 12s ease infinite;
+        animation: AnimationName 12s ease infinite;
+
+        }
+
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+    .fond, .fond-marron{
+        align-items: initial;
+        text-align: initial;
+        width: initial;
+        height: 100px;
+    }
+
+    .fond-marron h3{
+        color: white;
+    }
+
+    .conteneur-responsive{
+        display: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .text-responsive{
+        width: 100vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    
+        a{
+            display: inline-block;
+            width: 80px;
+        }
+    
+        p{
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+        }
+    
+        img{
+            width: 80px; 
+        }
+    }
+
+    .black-font{
+        color: black;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .conteneur-responsive{
+        padding-top: 140px;
+    }
+}

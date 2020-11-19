@@ -371,3 +371,20 @@ body{
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar img{
+        width: 14vh;
+    }
+
+    .linkedin_red img, 
+    .arrow_return img, 
+    .linkedin img, 
+    .icone_telephone img, 
+    .icone_telephone_red img{
+        width: 35px;
+    }
+
+}
